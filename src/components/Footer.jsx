@@ -24,7 +24,7 @@ export default function Footer() {
         {/* Right Side: Navigation Links */}
         <div className="flex items-center space-x-6 text-xs font-mono tracking-wider">
           <a 
-            href="https://github.com" 
+            href="https://github.com/henok2121u-lab/henok2121u-lab.git" 
             target="_blank" 
             rel="noreferrer" 
             className="text-stone-500 hover:text-ethiopian-text-bright transition-colors"

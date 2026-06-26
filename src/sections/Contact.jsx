@@ -15,7 +15,7 @@ export default function Contact() {
           </h2>
           <div className="w-16 h-1 bg-gradient-to-r from-ethiopian-gold to-transparent rounded mt-2 mx-auto"></div>
           <p className="text-ethiopian-text-muted text-sm max-w-sm mx-auto pt-2">
-            Open for internships, collaborative engineering projects, or full-stack web development discussions.
+            Open for internships and full-stack web development discussions.
           </p>
         </div>
 

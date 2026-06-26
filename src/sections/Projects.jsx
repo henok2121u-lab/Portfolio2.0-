@@ -2,10 +2,34 @@ import React from 'react';
 
 export default function Projects() {
   const projectList = [
-    { title: "Portfolio Website", description: "A high-end responsive showcase combining interactive UI modules with custom traditional digital layouts.", tags: ["React", "Tailwind CSS", "Vite"] },
-    { title: "Expense Tracker", description: "A comprehensive ledger interface providing clear asset flow tracking, categorization tools, and dynamic balances.", tags: ["React", "Node.js", "MongoDB"] },
-    { title: "Task Management App", description: "A productivity board rendering operational card layouts, progress states, and responsive actions.", tags: ["React", "Node.js", "Tailwind"] },
-    { title: "E-Commerce Platform", description: "A structured commerce portal detailing shopping arrays, seamless product filtering modules, and neat cart tracking.", tags: ["MERN Stack", "Tailwind"] }
+    { 
+      title: "Portfolio Website", 
+      description: "A high-end responsive showcase combining interactive UI modules with custom traditional digital layouts.", 
+      tags: ["React", "Tailwind CSS", "Vite"],
+      sourceLink: "https://github.com/henok7686-svg/j-portfolio-.git", // Linked to your repo
+      liveLink: "https://j-portfolio-eta.vercel.app/"                  // Linked to your live domain
+    },
+    { 
+      title: "Expense Tracker", 
+      description: "A comprehensive ledger interface providing clear asset flow tracking, categorization tools, and dynamic balances.", 
+      tags: ["React", "Node.js", "MongoDB"],
+      sourceLink: "https://github.com/henok2121u-lab/Expense-tracker.git", 
+      liveLink: "https://expense-tracker-xi-lime.vercel.app/" 
+    },
+    { 
+      title: "Task Management App", 
+      description: "A productivity board rendering operational card layouts, progress states, and responsive actions.", 
+      tags: ["React", "Node.js", "Tailwind"],
+      sourceLink: "#", 
+      liveLink: "#" 
+    },
+    { 
+      title: "E-Commerce Platform", 
+      description: "A structured commerce portal detailing shopping arrays, seamless product filtering modules, and neat cart tracking.", 
+      tags: ["MERN Stack", "Tailwind"],
+      sourceLink: "https://github.com/fuadsalah3/merkato-store-sample.git", 
+      liveLink: "https://merkato-store-sample.vercel.app/" 
+    }
   ];
 
   return (
@@ -55,11 +79,22 @@ export default function Projects() {
                     ))}
                   </div>
 
+                  {/* Buttons dynamic reference mapping */}
                   <div className="flex items-center justify-between pt-4 border-t border-stone-800 text-xs font-bold uppercase tracking-wider">
-                    <a href="#" className="text-stone-500 hover:text-ethiopian-text-bright transition-colors">
+                    <a 
+                      href={project.sourceLink} 
+                      target={project.sourceLink !== "#" ? "_blank" : undefined}
+                      rel="noopener noreferrer"
+                      className="text-stone-500 hover:text-ethiopian-text-bright transition-colors"
+                    >
                       Source Code
                     </a>
-                    <a href="#" className="inline-flex items-center space-x-1 px-3 py-1.5 bg-ethiopian-gold text-ethiopian-bg-dark rounded-md hover:bg-ethiopian-gold-light transition-colors">
+                    <a 
+                      href={project.liveLink} 
+                      target={project.liveLink !== "#" ? "_blank" : undefined}
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center space-x-1 px-3 py-1.5 bg-ethiopian-gold text-ethiopian-bg-dark rounded-md hover:bg-ethiopian-gold-light transition-colors"
+                    >
                       <span>Live App ↗</span>
                     </a>
                   </div>

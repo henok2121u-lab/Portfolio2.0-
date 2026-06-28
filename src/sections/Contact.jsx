@@ -5,7 +5,7 @@ export default function Contact() {
   const [state, handleSubmit] = useForm('mykqepkq');
 
   return (
-    <section id="contact" className="bg-ethiopian-bg-solid py-24 border-t border-stone-800/60">
+    <section id="contact" className="ethiopian-geo-pattern py-24 border-t border-stone-800/60">
       <div className="max-w-xl mx-auto px-6 text-center">
         
         {/* Header Block */}

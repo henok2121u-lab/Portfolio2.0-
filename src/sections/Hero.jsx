@@ -12,12 +12,8 @@ export default function Hero() {
           </span>
           
           <h1 className="text-5xl md:text-6xl font-black tracking-tight space-y-2">
-            <span className="block text-5xl md:text-6xl font-black tracking-tight text-ethiopian-text-bright font-sans">
-              ሄኖክ ብርሃኑ
-            </span>
-            <span className="text-xl md:text-2xl block text-ethiopian-gold font-medium tracking-wide font-mono">
-              [ Henok Birhanu ]
-            </span>
+            <span className="block text-5xl md:text-6xl font-black tracking-tight text-ethiopian-text-bright font-sans"> ሄኖክ ብርሃኑ </span>
+            <span className="text-xl md:text-2xl block text-ethiopian-gold font-medium tracking-wide font-mono"> [ Henok Birhanu ] </span>
           </h1>
           
           <p className="text-ethiopian-text-muted max-w-md text-base leading-relaxed font-medium">

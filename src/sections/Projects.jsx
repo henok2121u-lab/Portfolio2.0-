@@ -17,11 +17,11 @@ export default function Projects() {
       liveLink: "https://expense-tracker-xi-lime.vercel.app/" 
     },
     { 
-      title: "Task Management App", 
-      description: "A productivity board rendering operational card layouts, progress states, and responsive actions.", 
+      title: "Birana Web App", 
+      description: "A digital bookstore system featuring cloud book browsing, a serverless backend workflow, and custom Telegram mini-app integration.", 
       tags: ["React", "Node.js", "Tailwind"],
-      sourceLink: "#", 
-      liveLink: "#" 
+      sourceLink: "https://github.com/henok2121u-lab/berana-book-store.git", 
+      liveLink: "https://berana-book-store.vercel.app/" 
     },
     { 
       title: "E-Commerce Platform", 

@@ -27,8 +27,8 @@ export default function Projects() {
       title: "E-Commerce Platform", 
       description: "A structured commerce portal detailing shopping arrays, seamless product filtering modules, and neat cart tracking.", 
       tags: ["MERN Stack", "Tailwind"],
-      sourceLink: "https://github.com/fuadsalah3/merkato-store-sample.git", 
-      liveLink: "https://merkato-store-sample.vercel.app/" 
+      sourceLink: "https://github.com/fuadsalah3/updated-merkato.git", 
+      liveLink: "https://updated-merkato.vercel.app/" 
     }
   ];
 

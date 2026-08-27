@@ -6,7 +6,7 @@ import Education from './sections/Education';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
-import experience from './sections/Experience';
+import Experience from './sections/Experience';
 
 export default function App() {
   return (
@@ -14,9 +14,9 @@ export default function App() {
       <Navbar />
       <Hero />
       <AboutSkills />
+      <Experience />
       <Projects />
       <Education />
-      <Experience />
       <Contact />
       <Footer />
     </div>

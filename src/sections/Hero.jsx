@@ -17,7 +17,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-ethiopian-text-muted max-w-md text-base leading-relaxed font-medium">
-            Building elegant, high-performance web applications with clean architecture and modern user interfaces.
+            I build fast business websites, online stores and Telegram bots that help small businesses win more customers.
           </p>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">

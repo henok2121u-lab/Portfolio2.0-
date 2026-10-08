@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutSkills() {
   const skillCategories = [
     { title: "Frontend Development", skills: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"] },
-    { title: "Backend & Database", skills: ["Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB"] },
+    { title: "Backend & Database", skills: ["Node.js", "Express.js", "REST APIs", "PostgreSQL", "MongoDB", "Telegram Bot API"] },
     { title: "DevOps & Deployment", skills: ["Docker", "Dokploy", "Hostinger VPS", "Linux", "Nginx", "Cloudflare", "Vercel"] },
     { title: "Tools & Ecosystem", skills: ["Git", "GitHub", "Vite", "VS Code", "Postman"] }
   ];
@@ -24,7 +24,7 @@ export default function AboutSkills() {
           {skillCategories.map((category, idx) => (
             <div 
               key={idx} 
-              className="relative bg-ethiopian-bg-card border border-stone-200/60 rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_-10px_rgba(179,143,77,0.12)] hover:border-ethiopian-gold transition-all duration-300 pt-10"
+              className="relative bg-ethiopian-bg-card border border-stone-800/80 rounded-xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.02)] hover:shadow-[0_10px_30px_-10px_rgba(179,143,77,0.12)] hover:border-ethiopian-gold/50 transition-all duration-300 pt-10"
             >
               <div className="absolute top-0 left-6 w-12 h-1 bg-ethiopian-gold"></div>
               

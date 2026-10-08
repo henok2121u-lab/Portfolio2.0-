@@ -1,4 +1,6 @@
 import React from 'react';
+import liyutechShot from '../assets/liyutech-screenshot.webp';
+import cafeMenuShot from '../assets/cafe-menu-screenshot.webp';
 
 export default function Projects() {
   const projectList = [
@@ -6,12 +8,14 @@ export default function Projects() {
       title: "Liyu Tech Engineering",
       description: "A production business website for an Addis Ababa metal fabrication company, showcasing their services and projects and turning visitors into client inquiries.",
       tags: ["React", "Tailwind CSS", "Docker"],
+      image: liyutechShot,
       liveLink: "https://liyutech.et/"
     },
     {
       title: "Digital Cafe Menu",
       description: "A mobile-first digital menu for cafes, with specialty drinks and ETB pricing, a photo gallery, and location details that customers open with a QR scan.",
       tags: ["React", "Tailwind CSS", "Docker"],
+      image: cafeMenuShot,
       liveLink: "https://menu.phoenixb.tech/"
     },
     { 
@@ -51,6 +55,22 @@ export default function Projects() {
               <div className="bg-ethiopian-bg-card border border-stone-800/80 rounded-2xl p-6 md:p-8 flex flex-col justify-between h-full shadow-xl transition-all duration-300 group-hover:border-ethiopian-gold/50">
                 
                 <div className="space-y-4">
+                  {project.image && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block overflow-hidden rounded-lg border border-stone-800 aspect-video"
+                    >
+                      <img
+                        src={project.image}
+                        alt={`${project.title} screenshot`}
+                        loading="lazy"
+                        className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </a>
+                  )}
+
                   <div className="flex items-center justify-between text-xs font-mono text-stone-500 border-b border-stone-800 pb-3">
                     <span>[ PRJ_0{idx + 1} ]</span>
                     <span className="text-ethiopian-gold font-semibold">// Full Stack</span>

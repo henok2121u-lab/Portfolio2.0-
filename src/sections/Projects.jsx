@@ -2,19 +2,17 @@ import React from 'react';
 
 export default function Projects() {
   const projectList = [
-    { 
-      title: "Portfolio Website", 
-      description: "A high-end responsive showcase combining interactive UI modules with custom traditional digital layouts.", 
-      tags: ["React", "Tailwind CSS", "Vite"],
-      sourceLink: "https://github.com/henok7686-svg/j-portfolio-.git", // Linked to your repo
-      liveLink: "https://j-portfolio-eta.vercel.app/"                  // Linked to your live domain
+    {
+      title: "Liyu Tech Engineering",
+      description: "A production business website for an Addis Ababa metal fabrication company, showcasing their services and projects and turning visitors into client inquiries.",
+      tags: ["React", "Tailwind CSS", "Docker"],
+      liveLink: "https://liyutech.et/"
     },
-    { 
-      title: "Expense Tracker", 
-      description: "A comprehensive ledger interface providing clear asset flow tracking, categorization tools, and dynamic balances.", 
-      tags: ["React", "Node.js", "MongoDB"],
-      sourceLink: "https://github.com/henok2121u-lab/Expense-tracker.git", 
-      liveLink: "https://expense-tracker-xi-lime.vercel.app/" 
+    {
+      title: "Digital Cafe Menu",
+      description: "A mobile-first digital menu for cafes, with specialty drinks and ETB pricing, a photo gallery, and location details that customers open with a QR scan.",
+      tags: ["React", "Tailwind CSS", "Docker"],
+      liveLink: "https://menu.phoenixb.tech/"
     },
     { 
       title: "Birana Web App", 
@@ -81,14 +79,18 @@ export default function Projects() {
 
                   {/* Buttons dynamic reference mapping */}
                   <div className="flex items-center justify-between pt-4 border-t border-stone-800 text-xs font-bold uppercase tracking-wider">
-                    <a 
-                      href={project.sourceLink} 
-                      target={project.sourceLink !== "#" ? "_blank" : undefined}
-                      rel="noopener noreferrer"
-                      className="text-stone-500 hover:text-ethiopian-text-bright transition-colors"
-                    >
-                      Source Code
-                    </a>
+                    {project.sourceLink ? (
+                      <a
+                        href={project.sourceLink}
+                        target={project.sourceLink !== "#" ? "_blank" : undefined}
+                        rel="noopener noreferrer"
+                        className="text-stone-500 hover:text-ethiopian-text-bright transition-colors"
+                      >
+                        Source Code
+                      </a>
+                    ) : (
+                      <span className="text-stone-600">Client Project</span>
+                    )}
                     <a 
                       href={project.liveLink} 
                       target={project.liveLink !== "#" ? "_blank" : undefined}

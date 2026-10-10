@@ -42,12 +42,12 @@ export default function Navbar() {
             .projects()
           </a>
           
-          {/* Desktop Contact Action Button */}
-          <a 
-            href="#contact" 
+          {/* Desktop Hire Me Action Button */}
+          <a
+            href="#hire"
             className="ml-2 px-3.5 py-1.5 bg-ethiopian-gold text-ethiopian-bg-dark font-bold rounded-md hover:bg-ethiopian-gold-light transition-colors shadow-xs"
           >
-            .contact()
+            .hire_me()
           </a>
         </div>
 
@@ -89,13 +89,13 @@ export default function Navbar() {
             .projects()
           </a>
           
-          {/* Mobile Contact Button */}
-          <a 
-            href="#contact" 
+          {/* Mobile Hire Me Button */}
+          <a
+            href="#hire"
             onClick={() => setIsOpen(false)}
             className="w-full text-center px-4 py-2 bg-ethiopian-gold text-ethiopian-bg-dark font-bold rounded-lg hover:bg-ethiopian-gold-light transition-colors shadow-md mt-2"
           >
-            .contact()
+            .hire_me()
           </a>
         </div>
       </div>

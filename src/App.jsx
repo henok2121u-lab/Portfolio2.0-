@@ -4,7 +4,7 @@ import Hero from './sections/Hero';
 import AboutSkills from './sections/AboutSkills';
 import Education from './sections/Education'; 
 import Projects from './sections/Projects';
-import Contact from './sections/Contact';
+import HireMe from './sections/HireMe';
 import Footer from './components/Footer';
 import Experience from './sections/Experience';
 
@@ -17,7 +17,7 @@ export default function App() {
       <Experience />
       <Projects />
       <Education />
-      <Contact />
+      <HireMe />
       <Footer />
     </div>
   );

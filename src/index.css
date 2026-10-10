@@ -15,6 +15,11 @@
   --color-ethiopian-text-muted: #a69f92;    /* Warm sand-gray body copy */
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;  /* Keep section headings clear of the sticky navbar */
+}
+
 ::selection {
   background-color: rgb(212 175 55 / 0.3);  /* Soft gold highlight instead of browser blue */
   color: var(--color-ethiopian-text-bright);
